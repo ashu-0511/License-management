@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="./css/style.css">
+
+<form id="form" action="">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label class="purchaseinfo"><span class=" aster">*</span> Software Name</label>
+                <input type="text" class="form-control purchaseselects" name="software"
+                    placeholder="Enter Software name">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1"><span class=" aster">*</span> Staff</label>
+                <div class=" dropdown-with-icon dropdownalignment" id="category">
+                    <select class="selectpicker form-control" name="staff" placeholder="Select Staff" id="category"
+                        data-live-search="true">
+                        <option value="36">Accounts</option>
+                        <option value="38">finance</option>
+                        <option value="41">Automobile</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="mb-0">
+                <p class=" mb-2">Check-Out To</p>
+            </div>
+            <div class="sellbtn d-flex gapcheck mt-0">
+                <div class="col-md-5 checkbtn"><input type="checkbox" class=" mt-0">
+                    <span>Staff</span>
+                </div>
+                <div class="col-md-5 checkbtn"><input type="checkbox" class=" mr-2">
+                    <span>Asset</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="col-md-12">
+        <div class="purchasegrp">
+            <label class="purchaseinfo">Notes</label>
+            <input type="textarea" class="form-control purchaseselects " placeholder=" Enter Notes" rows />
+        </div>
+    </div>
+    <div class=" d-flex justify-content-end space-sc sbtn">
+        <button type="button" class="taskclose1" data-bs-dismiss="modal">CLOSE</button>
+        <button type="submit" class="tasksave1" id="form">CHECK-OUT</button>
+    </div>
+    </div>
+</form>
+<script>
+    $(document).ready(function () {
+        $("#form")
+            .formValidation({
+                framework: "bootstrap",
+                fields: {
+                    software: {
+                        validators: {
+                            notEmpty: {
+                                message: "Enter Software Name",
+                            },
+                        },
+                    },
+                    staff: {
+                        validators: {
+                            notEmpty: {
+                                message: "Select Staff ",
+                            },
+                        },
+                    },
+                },
+            })
+
+    });
+</script>
+<script>
+    document.getElementById('toggleCheckbox').addEventListener('change', function () {
+        var target = document.getElementById('accor_plusExamplecollapse1');
+        if (this.checked) {
+            target.classList.add('show');
+            target.classList.remove('collapse');
+        } else {
+            target.classList.remove('show');
+            target.classList.add('collapse');
+        }
+    });
+</script>
+<script>
+    $(".button_su_inner").mouseenter(function (e) {
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("desplode-circle");
+        $(this).prev(".su_button_circle").addClass("explode-circle");
+
+    });
+
+    $(".button_su_inner").mouseleave(function (e) {
+
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("explode-circle");
+        $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+    });
+</script>
+</div>

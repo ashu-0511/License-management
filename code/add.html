@@ -1,0 +1,305 @@
+<link rel="stylesheet" href="./css/style.css">
+
+<form id="form" action="">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label class="purchaseinfo"><span class=" aster">*</span> Software Name</label>
+                <input type="text" class="form-control purchaseselects" name="software"
+                    placeholder="Enter Software name">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1"><span class=" aster">*</span> Category Name</label>
+                <div class=" dropdown-with-icon dropdownalignment" id="category">
+                    <select class="selectpicker form-control" name="category" placeholder="Select Category Name"
+                        id="category" data-live-search="true">
+                        <option value="36">Car</option>
+                        <option value="38">Bike</option>
+                        <option value="41">Auto</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1">Product key</label>
+                <input type="text" class="form-control purchaseselects" id="customer-name"
+                    placeholder="Enter Product key">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1"><span class=" aster">*</span> Seats</label>
+                <input type="text" class="form-control purchaseselects" name="seat" placeholder=" Enter seats">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1"><span class=" aster">*</span> Manufacturer</label>
+                <div class=" dropdown-with-icon dropdownalignment">
+                    <select class="selectpicker form-control" name="manufacture" placeholder="Select Manufacturer"
+                        id="manufacture" data-live-search="true">
+                        <option value="36">Kia</option>
+                        <option value="38">Honda</option>
+                        <option value="41">Tata</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1">Licensed to name</label>
+                <input type="text" class="form-control purchaseselects" id="customer-name"
+                    placeholder=" Enter Licensed to Name">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1">Licensed to Email</label>
+                <input type="text" class="form-control purchaseselects" id="customer-name"
+                    placeholder="Enter Licensed to Email">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1">Supplier</label>
+                <div class=" dropdown-with-icon dropdownalignment">
+                    <select class="selectpicker form-control" name="supplier" placeholder="Select Supplier"
+                        data-live-search="true">
+                        <option value="36">Hyundai</option>
+                        <option value="38">Suzuki</option>
+                        <option value="41">mahindra</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1">Order number</label>
+                <input type="text" class="form-control purchaseselects" id="customer-name"
+                    placeholder="Enter Order Number">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1">Purchase Order number</label>
+                <input type="text" class="form-control purchaseselects" id="customer-name"
+                    placeholder="Enter PO Number">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo mb-1">Purchase Cost</label>
+                <input type="text" class="form-control purchaseselects" id="customer-name"
+                    placeholder="Enter Purchase Cost">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label class="purchaseinfo">Purchase Date</label>
+                <input type="date" id="date" class="form-control purchaseselects" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label class="purchaseinfo">Expiration Date</label>
+                <input type="date" id="date1" class="form-control purchaseselects " />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label class="purchaseinfo">Termination Date</label>
+                <input type="date" id="date2" class="form-control purchaseselects " />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="purchasegrp">
+                <label class="purchaseinfo"> Depreciation</label>
+                <div class=" dropdown-with-icon dropdownalignment">
+                    <select class="selectpicker form-control" name="Depreciation" placeholder="Select Depreciation"
+                        data-live-search="true">
+                        <option value="36">Devices</option>
+                        <option value="38">Software</option>
+                        <option value="41">Machine</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="sellbtn d-flex gap">
+            <div class="col-md-4 checkbtn"><input type="checkbox" class=" mt-0">
+                <span>Reassignable</span>
+            </div>
+            <div class="col-md-4 checkbtn"><input type="checkbox" class=" mr-2">
+                <span>Maintained</span>
+            </div>
+
+            <div class="logic">
+                <div class="col-md-4 ">
+                    <div class="accordion-header Forsell_div1 checkbox-container checkbtn"
+                        id="accordionwithplusExample1">
+                        <input type="checkbox" id="toggleCheckbox" aria-expanded="false" class="form-check-input">
+                        <label class="maintain_label sell" for="toggleCheckbox">For Sell</label>
+                    </div>
+                </div>
+
+                <div id="accor_plusExamplecollapse1" class="accordion-collapse sellingprice collapse col-md-12"
+                    aria-labelledby="accordionwithplusExample1" data-bs-parent="#accordionWithplusicon">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="purchasegrp mt-2">
+                                    <label class="purchaseinfo"><span class=" aster">*</span> Selling Price</label>
+                                    <input placeholder="Enter Selling Price" type="number"
+                                        class="form-control purchaseselects sp_input" id="customer-name"
+                                        name="sellingPrice">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-12">
+        <div class="purchasegrp">
+            <label class="purchaseinfo">Notes</label>
+            <input type="textarea" class="form-control purchaseselects " placeholder=" Enter Notes" rows />
+        </div>
+    </div>
+    <div class=" d-flex justify-content-end space-sc sbtn">
+        <button type="button" class="taskclose1" data-bs-dismiss="modal">CLOSE</button>
+        <button type="submit" class="tasksave1" id="form">SAVE</button>
+    </div>
+    </div>
+</form>
+
+<script>
+    document.getElementById('toggleCheckbox').addEventListener('change', function () {
+        var target = document.getElementById('accor_plusExamplecollapse1');
+        if (this.checked) {
+            target.classList.add('show');
+            target.classList.remove('collapse');
+        } else {
+            target.classList.remove('show');
+            target.classList.add('collapse');
+        }
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#form")
+            .formValidation({
+                framework: "bootstrap",
+                fields: {
+                    software: {
+                        validators: {
+                            notEmpty: {
+                                message: "Enter Software Name",
+                            },
+                        },
+                    },
+                    category: {
+                        validators: {
+                            notEmpty: {
+                                message: "Select Category Name",
+                            },
+                        },
+                    },
+                    manufacture: {
+                        validators: {
+                            notEmpty: {
+                                message: "Select Manufacturer",
+                            },
+                        },
+                    },
+                    seat: {
+                        validators: {
+                            notEmpty: {
+                                message: "Enter Seats",
+                            },
+                        },
+                    },
+                    sellingPrice: {
+                        validators: {
+                            notEmpty: {
+                                message: "Select Selling Price",
+                            },
+                        },
+                    },
+                    sellingPrice: {
+                        validators: {
+                            notEmpty: {
+                                message: "Enter Selling price",
+                            },
+                        },
+                    },
+                },
+            })
+
+    });
+</script>
+
+<!--   show date picker  -->
+<script>
+    function toggleInput() {
+        var checkBox = document.getElementById("sellCheckbox");
+        var priceContainer = document.getElementById("priceContainer");
+
+        if (checkBox.checked) {
+            priceContainer.style.display = "block";
+        } else {
+            priceContainer.style.display = "none";
+        }
+    }
+</script>
+<script>
+    document.getElementById('date').addEventListener('click', () => {
+        if ('showPicker' in HTMLInputElement.prototype) {
+            document.getElementById('date').showPicker();
+        }
+    })
+</script>
+<script>
+    document.getElementById('date1').addEventListener('click', () => {
+        if ('showPicker' in HTMLInputElement.prototype) {
+            document.getElementById('date1').showPicker();
+        }
+    })
+</script>
+<script>
+    document.getElementById('date2').addEventListener('click', () => {
+        if ('showPicker' in HTMLInputElement.prototype) {
+            document.getElementById('date2').showPicker();
+        }
+    })
+</script>
+
+<script>
+    $(".button_su_inner").mouseenter(function (e) {
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("desplode-circle");
+        $(this).prev(".su_button_circle").addClass("explode-circle");
+
+    });
+
+    $(".button_su_inner").mouseleave(function (e) {
+
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("explode-circle");
+        $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+    });
+</script>
+
+</div>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theme</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="salesqueen logo.jpeg" type="image/x-icon">
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+    <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+    <!--summernote_textarea-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <!-- CSS -->
+    <!-- validation -->
+    <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+    <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+
+
+
+
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- MultidateTime picker -->
+    <link rel="stylesheet" href="../../assets/datatables/css/dataTables.dateTime.min.css" />
+    <script src="../../assets/js/dataTables.dateTime.min.js"></script>
+    <!-- <script src="../../assets/js/moment.min.js"></script> -->
+
+    <!-- Include Required Prerequisites -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" /> -->
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+
+</head>
+
+<body onload="addDate();">
+    <div class="row m-2 gy-3">
+        <div class="tblcontainer tabspace bg-white">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="tab-container mappingtabhdr mln16">
+                        <div class="heading new-header">
+                            <h2> details</h2>
+                            <a href="./index.html" class="btn btn-secondar back back-btn">BACK</a>
+                        </div>
+                        <ul id="tabList" class="desktop deskk mb-2">
+                            <li>
+                                <div class="child invchildmtmb ">
+                                    <button class="tablinks2 tb-linksmb active" onclick="opentab2(event, 'General')">
+                                        Details</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="child invchildmtmb ">
+                                    <button class="tablinks2 tb-linksmb custbtn"
+                                        onclick="opentab2(event, 'Company Information')">
+                                        Seats</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="child invchildmtmb ">
+                                    <button class="tablinks2 tb-linksmb" onclick="opentab2(event, 'Localization')">
+                                        History</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="child invchildmtmb ">
+                                    <button class="tablinks2 tb-linksmb" onclick="opentab2(event, 'Finance')">
+                                        Files</button>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="tab-arrow lefts" onclick="scrollTabs('left')">
+                            <i class="bi bi-chevron-left arrowfont"></i>
+                        </div>
+                        <div class="tab-arrow right" onclick="scrollTabs('right')">
+                            <i class="bi bi-chevron-right arrowfont "></i>
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators1" class="carousel slide carsl" data-bs-interval="false"
+                        style="height:54px">
+                        <div class="carousel-inner scroll-images">
+                            <div class="carousel-item active" style="text-align: center;">
+                                <div class="">
+                                    <div class="child mb-0 childautomobile" style="height:auto">
+                                        <button class="tablinks2 active tabresact" style="width:70%"
+                                            onclick="opentab2(event, 'General')">
+                                            Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="text-align: center;">
+                                <div class="">
+                                    <div class="child mb-0 childautomobile" style="height:auto;">
+                                        <button class="tablinks2 tabresact" style="width:70%"
+                                            onclick="opentab2(event, 'Company Information')">
+                                            Seats</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="text-align: center;">
+                                <div class="">
+                                    <div class="child mb-0 childautomobile" style="height:auto;">
+                                        <button class="tablinks2 tabresact" style="width:70%"
+                                            onclick="opentab2(event, 'Localization')">
+                                            History</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="text-align: center;">
+                                <div class="">
+                                    <div class="child mb-0 childautomobile" style="height:auto;">
+                                        <button class="tablinks2 tabresact" style="width:70%"
+                                            onclick="opentab2(event, 'Finance')">Files
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev carosel_bttn carouselmargintop" type="button"
+                                data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                <i class="bi bi-chevron-left icon"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next carouselmargintop carosel_bttn" type="button"
+                                data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                <i class="bi bi-chevron-right icon"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tblcontainer tabspace bg-white side-panel1 mrtpp">
+            <div class="col-md-12">
+
+
+                <!--General Tab-->
+
+                <div id="General" class="tabcontent1 ps-0 " style="display:block">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- striped table -->
+                            <h2 class="fnt_head">
+
+
+                                <div class="vertical-line">
+                                    <span class="Bcgtop capsule"></span>
+                                    <span class="Bcgbttm capsule"></span>
+                                </div>
+                            </h2>
+                            <div class="row tb-margin">
+                                <div class="col-md-12">
+                                    <table class="details-table table table-striped">
+                                        <tbody>
+                                            <tr class="project-overview greyback">
+                                                <td class="viewjobft " width="20%"><b>Manufacturer:</b></td>
+                                                <td class="viewjobft ">Samsung</td>
+                                            </tr>
+                                            <tr class="project-overview greyback">
+                                                <td class="viewjobft " width="20%"><b>Product key:</b></td>
+                                                <td class="viewjobft ">02</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Category :</b></td>
+                                                <td class="viewjobft ">Graphic</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Supplier :</b></td>
+                                                <td class="viewjobft ">Samsung</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Termination date :</b></td>
+                                                <td class="viewjobft ">19/02/2030</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Purchase order number:</b></td>
+                                                <td class="viewjobft "> 32</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Purchase date:</b></td>
+                                                <td class="viewjobft ">01/01/2002</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Purchase Cost:</b></td>
+                                                <td class="viewjobft "> 3200</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Order Number :</b></td>
+                                                <td class="viewjobft "> 12</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Seats:</b></td>
+                                                <td class="viewjobft "> 12</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Reassignable:</b></td>
+                                                <td class="viewjobft "> No</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Notes:</b></td>
+                                                <td class="viewjobft "> 12</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Seats-->
+                <div id="Company Information" class="tabcontent1 ps-0" style="display:none">
+
+                    <div class="row my-2 mx-0">
+
+                        <div class="card-body mx-0 p-0">
+                            <div class="row ">
+                                <div class="col-md-12" id="first_col">
+                                    <div class="demo-html mt-0">
+                                        <table
+                                            class="example display dataTable display responsive nowrap tblalign table borderless overflow-y"
+                                            style="width: 100%" id="example" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th><input type="checkbox" id="all_check" onchange="checkAll()">
+                                                    </th>
+                                                    <th>
+                                                        Seat
+                                                    </th>
+                                                    <th>
+                                                        Check-out to
+                                                    </th>
+                                                    <th>
+                                                        Location
+                                                    </th>
+                                                    <th>
+                                                        Check-in/Check-out
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="row-hover">
+                                                    <td class="progtble"><input type="checkbox"
+                                                            onchange="toggleRowBackground(this)" class="single_check"
+                                                            onclick=" singleCheck()"></td>
+                                                    <td class="hrtble1 "><a href="#" class="">
+                                                            <span class="">Seat 1</span></a>
+                                                        <p class="header-effect mb-2">
+                                                            <a data-bs-toggle="tooltip" data-bs-title="delete"
+                                                                data-bs-auto-close="outside" title="delete">
+                                                                <img src="../assets/delete.svg" height="15px"
+                                                                    width="15px" alt="">
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <span>
+                                                            <button1 class="clrlogbtn"
+                                                                onclick="showModalcheck('checkout.html','Check-out')">
+                                                                Check-out
+                                                            </button1>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row-hover">
+                                                    <td class="progtble"><input type="checkbox"
+                                                            onchange="toggleRowBackground(this)" class="single_check"
+                                                            onclick=" singleCheck()"></td>
+                                                    <td class="hrtble1 "><a href="#" class="">
+                                                            <span class="">Seat 2</span></a>
+                                                        <p class="header-effect mb-2">
+                                                            <a data-bs-toggle="tooltip" data-bs-title="delete"
+                                                                data-bs-auto-close="outside" title="delete">
+                                                                <img src="../assets/delete.svg" height="15px"
+                                                                    width="15px" alt="">
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><span>
+                                                            <button1 class="clrlogbtn"
+                                                                onclick="showModalcheck('checkout.html','Check-out')">
+                                                                Check-out
+                                                            </button1>
+                                                        </span></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--History-->
+            <div id="Localization" class="tabcontent1 ps-0" style="display:none">
+                <div class="col-md-12 me-3" id="first_col">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12" id="first_col">
+                                <div class="seat">
+                                    <div class="">
+                                        <table
+                                            class="example display dataTablesss display responsive nowrap tblalign table borderless"
+                                            style="width: 100%;" id="example" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr class="examplesss">
+                                                    <th>Date</th>
+                                                    <th>Admin</th>
+                                                    <th>Action</th>
+                                                    <th>Target</th>
+                                                    <th>Notes</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="examples">
+                                                    <td class="hrtble11">
+                                                        <a href="#" class="">
+                                                            <span class="viewbtn">31-05-2024 02:23:43</span>
+                                                        </a>
+                                                        <p class="header-effect mb-2">
+                                                            <a href="sales_invoice_edit.html" data-bs-toggle="tooltip"
+                                                                data-bs-title="delete" data-bs-auto-close="outside">
+                                                                <img src="../assets/delete.svg" height="15px"
+                                                                    width="15px" alt="">
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                    <td>GTSSolution Gts</td>
+                                                    <td>
+                                                        <button1 class="clrlogbtn"
+                                                            onclick="showModalcheck('checkout.html','Check-out')">
+                                                            Check-out
+                                                        </button1>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-user"></i>(IT)Test 1
+                                                    </td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr class="examples">
+                                                    <td class="hrtble11">
+                                                        <a href="#" class="">
+                                                            <span class="viewbtn">31-05-2024 02:23:43</span>
+                                                        </a>
+                                                        <p class="header-effect mb-2">
+                                                            <a href="sales_invoice_edit.html" data-bs-toggle="tooltip"
+                                                                data-bs-title="delete" data-bs-auto-close="outside">
+                                                                <img src="../assets/delete.svg" height="15px"
+                                                                    width="15px" alt="">
+                                                            </a>
+                                                        </p>
+                                                    </td>
+                                                    <td>GTSSolution Gts</td>
+                                                    <td>
+                                                        <button1 class="clrlogbtn"
+                                                            onclick="showModalcheck('checkout.html','Check-out')">
+                                                            Check-out
+                                                        </button1>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-user"></i>(IT)Test 1
+                                                    </td>
+                                                    <td>10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Files-->
+
+            <div id="Finance" class="tabcontent1 ps-0 mt-0" style="display:none;">
+                <div class="button_su  ">
+                    <span class="su_button_circle"></span>
+                    <button type="button" class="impbtn-default loadbtn import" href="bulkupload.html">
+                        <span class="button_text_container">
+                            <i class="fa-solid fa-arrow-down-wide-short "></i> UPLOAD FILE
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <script>
+            function openTab(evt, tabName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            var carousel = document.getElementById("carouselExampleIndicators");
+
+            carousel.addEventListener("slid.bs.carousel", function (event) {
+                var activeSlideIndex = event.to;
+                if (activeSlideIndex === 0) {
+
+                    openTab(event, 'general');
+
+                }
+                else if (activeSlideIndex === 1) {
+
+                    openTab(event, 'billing');
+
+                }
+                else if (activeSlideIndex === 2) {
+
+                    openTab(event, 'custom');
+
+                }
+            });
+        </script> -->
+
+
+        <script>
+            function openTab(evt, tabName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            var carousel = document.getElementById("carouselExampleIndicators");
+
+            carousel.addEventListener("slid.bs.carousel", function (event) {
+                var activeSlideIndex = event.to;
+                if (activeSlideIndex === 0) {
+
+                    openTab(event, 'general');
+
+                }
+                else if (activeSlideIndex === 1) {
+
+                    openTab(event, 'billing');
+
+                }
+                else if (activeSlideIndex === 2) {
+
+                    openTab(event, 'custom');
+
+                }
+            });
+
+
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                var table = $('.example').DataTable({
+
+
+                    buttons: [
+                        {
+
+                        },
+
+                        {
+                            text: '<i class="fa-solid fa-arrow-right-from-bracket"></i> EXPORT',
+                            extend: 'collection',
+                            buttons: [
+                                {},
+                                {
+                                    text: '<i class="fa-regular fa-file-excel icn me-2 excel-icon"></i> Excel',
+                                    extend: 'excel',
+
+                                },
+                                {
+                                    text: '<i class="fa-regular fa-file-lines icn me-2 csv-icon"></i> CSV',
+                                    extend: 'csv',
+                                },
+                                {
+                                    text: '<i class="fa-regular fa-file-pdf icn me-2 pdf-icon"></i> PDF',
+                                    extend: 'pdf'
+                                },
+                                {
+                                    text: '<i class="fa-solid fa-print me-2 icn print-icon"></i> PRINT',
+                                    extend: 'print'
+                                },
+                            ],
+                            className: 'px-3'
+
+                        }
+
+                    ],
+                    rowReorder: {
+                        selector: 'td:nth-child(2)'
+                    },
+                    language: { lengthMenu: '_MENU_', search: '', searchPlaceholder: " Search for order ID, customer, order status or something...", },
+                    responsive: true,
+                    dom: 'Blfrtip',
+
+
+                });
+
+            });
+            function checkAll() {
+                checkbox = document.getElementById("all_check");
+                if (checkbox.checked == true) {
+                    $('.single_check').prop("checked", true);
+                    $('.bulk_send').show(1000);
+                } else {
+                    $('.single_check').prop("checked", false);
+                    $('.bulk_send').hide(1000);
+                }
+            }
+
+
+            if (checkbox.checked == true) {
+
+                $('.bulk_send').show(1000);
+            } else {
+                count = 0;
+                for (let i = 0; i < boxes.length; i++) {
+                    if (boxes[i].checked == true) {
+                        count += 1;
+                    }
+                }
+                if (count == 0) {
+                    $('.bulk_send').hide(1000);
+                    $('#all_check').prop("checked", false);
+                } else {
+                    $('.bulk_send').show();
+                }
+            }
+
+
+            $(document).ready(function () {
+                const single_checks = document.querySelectorAll('.single_check');
+                const rows = document.querySelectorAll('table.dataTable tbody tr');
+                single_checks.forEach((singleCheck) => {
+                    singleCheck.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        singleCheck.checked = false;
+                    })
+                    singleCheck.addEventListener('dblclick', (e) => {
+                        e.stopPropagation();
+                        singleCheck.checked = true;
+
+                    })
+                })
+                rows.forEach((row) => {
+                    row.addEventListener('dblclick', () => {
+                        if (row.firstElementChild.children[0].checked == false) {
+                            row.firstElementChild.children[0].checked = true
+                        } else {
+                            row.firstElementChild.children[0].checked = false
+                        }
+                    })
+                })
+            })
+        </script>
+
+        <script>
+            new DataTable('.example', {
+                columnDefs: [
+                    {
+                        orderable: false,
+                        className: 'select-checkbox',
+                        targets: 0
+                    }
+                ],
+                select: {
+                    style: 'os',
+                    selector: 'td:first-child'
+                },
+                order: [[1, 'asc']]
+            });
+        </script>
+        <script>
+            function toggleRowBackground(checkbox) {
+                var row = checkbox.closest('tr');
+                row.classList.toggle('selected');
+            }
+        </script>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </table>
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+    <div class="modal fade" id="modal_md_check" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header hdrbg">
+                    <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"></button>
+                    <!-- <h5 class="modal-title"></h5> -->
+                    <h5 class="fnt_head">
+
+                        <b class="modal-title"></b>
+                        <div class="vertical-line">
+
+                            <span class="Bcgtop capsule"></span>
+                            <span class="Bcgbttm capsule"></span>
+                        </div>
+                    </h5>
+                </div>
+                <div class="modal-body mbdclr">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function opentab2(evt, tabName) {
+            var i, tabcontent1, tablinks2;
+            tabcontent1 = document.getElementsByClassName("tabcontent1");
+            for (i = 0; i < tabcontent1.length; i++) {
+                tabcontent1[i].style.display = "none";
+            }
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Automatically open the first tab when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementsByClassName("tablinks2")[0].click();
+        });
+
+
+    </script>
+
+    <script>
+        function showModalcheck(url, title) {
+            $('#modal_md_check').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md_check').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md_check .modal-title').html(title);
+                    $('#modal_md_check .modal-body').html(response);
+                }
+            });
+        }
+    </script>
+    <script>
+        var carousel = document.getElementById("carouselExampleIndicators1");
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+            var activeSlideIndex = event.to;
+
+            if (activeSlideIndex === 0) {
+                opentab2(event, 'General')
+            } else if (activeSlideIndex === 1) {
+                opentab2(event, 'Company Information');
+            } else if (activeSlideIndex === 2) {
+                opentab2(event, 'Localization');
+            } else if (activeSlideIndex === 3) {
+                opentab2(event, 'Finance');
+            } else if (activeSlideIndex === 4) {
+                opentab2(event, 'Customers');
+            } else if (activeSlideIndex === 8) {
+                opentab2(event, 'PDF');
+            } else if (activeSlideIndex === 9) {
+                opentab2(event, 'E-Sign');
+            } else if (activeSlideIndex === 9) {
+                opentab2(event, 'Tags');
+            } else if (activeSlideIndex === 9) {
+                opentab2(event, 'System Update');
+            } else if (activeSlideIndex === 9) {
+                opentab2(event, 'System Update');
+            }
+        });
+
+        function checkfirstlogin() {
+            $.ajax({
+                type: "POST",
+                url: 'https://user.loyalwings.com/Home/checkfirstlogin',
+                dataType: "json",
+                success: function (response) {
+                    location.reload();
+                }
+            });
+        }
+        checkfirstlogin();
+    </script>
+    <script>
+        function toggleViews(id) {
+            $.ajax({
+                type: 'POST',
+                url: '<?= base_url() ?>/Crm/getUserstab/' + id,
+                dataType: 'json',
+                success: function (result) {
+                    $('#stripedtab').html(result);
+                }
+            });
+
+
+
+
+            var hidden_columns = [3, 4, 5, 7];
+            var _visible = false;
+            if ($("#first_col").hasClass("col-md-12")) {
+                $("#first_col").removeClass("col-md-12").addClass("col-md-4 pe-0");
+                // $("#first_col").removeClass("col-md-12").addClass("col-md-4");
+                $("#sec_col").show();
+
+            } else {
+                $("#first_col").removeClass("col-md-4 pe-0").addClass("col-md-12");
+                // $("#first_col").removeClass("col-md-4").addClass("col-md-12");
+                $("#sec_col").hide();
+                _visible = true;
+            }
+            var _table = $("#example").DataTable();
+            // Show hide hidden columns
+            _table.columns(hidden_columns).visible(_visible, true);
+            _table.columns.adjust();
+
+            $('#toggle_btn').on('click', function () {
+                // Assuming you have an ID to pass to the toggleView function, replace 'yourId' with the actual ID
+                var element = document.getElementById(ID);
+                if (event.target.checked) {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+
+
+            });
+        }
+    </script>
+</body>
+
+</html>
