@@ -72,7 +72,7 @@
 </head>
 
 <body>
-    <div class="card-body card m-4">
+    <div class="card-body card m-4" id="file">
         <div class="m-4">
             <div class="button_su mb-0">
                 <span class="su_button_circle">
@@ -92,7 +92,7 @@
                         <div class="col-md-12" id="first_col">
                             <div class="demo-html mt-0">
                                 <table
-                                    class="example display dataTable responsive nowrap tblalign table borderless overflow-y"
+                                    class="example bulk display dataTable responsive nowrap tblalign table borderless overflow-y"
                                     style="width: 100%" id="example" aria-describedby="example_info">
                                     <thead class="theadrow">
                                         <tr class="thead-row">
@@ -123,10 +123,10 @@
                                             <td class="progtble"><input type="checkbox"
                                                     onchange="toggleRowBackground(this)" class="single_check"
                                                     onclick="singleCheck()"></td>
-                                            <td class="tdata">01</td>
+                                            <td class="tdata mx-2">01</td>
                                             <td class="hrtble1 "><a href="#" class="">
                                                     <span class="">Gts</span></a>
-                                                <p class="header-effect mb-2">
+                                                <p class="header-effect mb-1">
                                                     <a data-bs-toggle="tooltip" data-bs-title="delete"
                                                         data-bs-auto-close="outside" title="delete">
                                                         <img src="../assets/delete.svg" height="15px" width="15px"
@@ -157,9 +157,9 @@
                                                     onchange="toggleRowBackground(this)" class="single_check"
                                                     onclick="singleCheck()"></td>
                                             <td class="tdata">02</td>
-                                            <td class="hrtble1 "><a href="#" class="">
+                                            <td class="hrtble1"><a href="#" class="">
                                                     <span class="">Gts</span></a>
-                                                <p class="header-effect mb-2">
+                                                <p class="header-effect mb-1">
                                                     <a data-bs-toggle="tooltip" data-bs-title="delete"
                                                         data-bs-auto-close="outside" title="delete">
                                                         <img src="../assets/delete.svg" height="15px" width="15px"
@@ -204,24 +204,25 @@
                         of the category type is license).</p>
                 </div>
             </div>
-
-            <div class="col-md-3">
-                <div class=" excfnthr">
-                    <label for="" class="excfllbl"><span class="aster">* </span>Choose CSV File</label>
-                    <div class="input-group d-flex flex-nowrap">
-                        <input type="file" class="chooseexcfle">
+            <form action="" id="form">
+                <div class="col-md-3">
+                    <div class=" excfnthr">
+                        <label for="" class="excfllbl"><span class="aster">* </span>Choose CSV File</label>
+                        <div class="input-group d-flex flex-nowrap">
+                            <input type="file" class="chooseexcfle choose" name="choose">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="button_su mt-2">
-                <span class="su_button_circle"></span>
-                <button type="button" class="impbtn-default loadbtn import" href="bulkupload.html">
-                    <span class="button_text_container">
-                        <i class="fa-solid fa-arrow-down-wide-short"></i> IMPORT
-                    </span>
-                </button>
-            </div>
+                <div class="button_su mt-2">
+                    <span class="su_button_circle"></span>
+                    <button type="submit" class="impbtn-default loadbtn import">
+                        <span class="button_text_container">
+                            <i class="fa-solid fa-arrow-down-wide-short"></i> IMPORT
+                        </span>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -234,7 +235,7 @@
                     choose: {
                         validators: {
                             notEmpty: {
-                                message: "Enter Software Name",
+                                message: "Choose File",
                             },
                         },
                     },
