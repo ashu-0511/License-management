@@ -23,7 +23,6 @@ div.dt-buttons .dt-button {
 
 .btn-1 {
     flex: 1;
-
 }
 
 .z-index-0 {
@@ -38,6 +37,7 @@ div.dt-buttons .dt-button {
 .heading {
     flex: 1;
     white-space: nowrap;
+    margin: 20px 15px 20px 20px;
 }
 
 .heading h4 {
@@ -53,7 +53,6 @@ table.dataTable>tbody>tr.child ul.dtr-details>li {
     border-bottom: none !important;
     padding: 0.8em 0 !important;
 }
-
 
 table.dataTable.dtr-inline.collapsed>tbody>tr>td.child,
 table.dataTable.dtr-inline.collapsed>tbody>tr>th.child,
@@ -107,24 +106,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
 
 .gap {
     gap: 8px;
-}
-
-@media only screen and (max-width: 600px) {
-    .navs {
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    .button_su {
-        display: flex !important;
-        height: 50px;
-        white-space: nowrap;
-        margin-left: 1px;
-    }
-
 }
 
 /* view.css */
@@ -266,10 +247,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
     font-size: 20px;
 }
 
-.heading {
-    margin: 20px 15px;
-}
-
 /* input[type="checkbox"] {
     accent-color: #405189;
     padding: 5px;
@@ -302,25 +279,11 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
     border: none !important;
 }
 
-@media only screen and (max-width: 600px) {
-    .newbody {
-        margin: 0 auto;
-    }
-
-    .new-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-    }
-}
-
 /* bulk css */
 .notes_bp {
     background-color: #fff3cd;
     padding: 5px;
 }
-
 
 .mx {
     margin: 0 20px !important;
@@ -361,24 +324,11 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
     margin: 10px 0px !important;
 }
 
-@media only screen and (max-width: 600px) {
-
-    .import {
-        width: auto !important;
-    }
-
-    .sellbtn {
-        flex-wrap: wrap;
-    }
-
-}
-
 /* add.css */
 
 .dropdownalignment {
     margin-top: 5px;
 }
-
 
 .sbtn {
     margin-top: 15px;
@@ -432,9 +382,9 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
     margin-bottom: 0px !important;
 }
 
-.sp_input {
+/* .sp_input {
     width: 93.5% !important;
-}
+} */
 
 /* check-out */
 
@@ -474,3 +424,69 @@ input::-webkit-inner-spin-button {
 .bulk>tbody>tr>td>td {
     padding: 5px !important;
 } */
+button.dt-button,
+div.dt-button,
+a.dt-button,
+input.dt-button {
+    margin-left: 0px !important;
+}
+
+.seatble1 {
+    padding-top: 5px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .navs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .button_su {
+        display: flex !important;
+        height: 50px;
+        white-space: nowrap;
+        margin-left: 1px;
+    }
+
+    .import {
+        width: auto !important;
+    }
+
+    .sellbtn {
+        flex-wrap: wrap;
+    }
+
+    .bulk>tbody>tr>td {
+        padding: 12px 10px 12px 25px !important;
+    }
+
+    .newbody {
+        margin: 0 auto;
+    }
+
+    .new-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .heading {
+        margin: 20px 15px 5px 20px !important;
+    }
+
+    .seates>tbody>tr>td {
+        padding: 2px 10px 0px 30px !important;
+    }
+}
+
+.seates>tbody {
+    vertical-align: middle !important;
+}
+
+.seates>tbody>tr>td {
+    padding: 2px 10px 0px 10px !important;
+}
