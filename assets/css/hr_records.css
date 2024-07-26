@@ -723,7 +723,7 @@ input:checked+.slider:before {
 }
 
 .greyback {
-  background-color: rgba(92, 92, 91, 0.765) !important;
+  /* background-color: rgba(92, 92, 91, 0.765) !important; */
 }
 
 .contli li {

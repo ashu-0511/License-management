@@ -2881,7 +2881,7 @@ div.dt-buttons {
 
 @media (max-width: 980px) {
   div.dt-buttons {
-    top: 65px !important;
+    top: 60px !important;
     float: left !important;
     margin-bottom: 65px !important;
   }
