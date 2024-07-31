@@ -181,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <div class="tblcontainer tabspace bg-white side-panel1 mrtpp">
+        <div class="tblcontainer rounded-2 tabspace bg-white side-panel1 mrtpp">
             <div class="col-md-12">
                 <!--General Tab-->
                 <div id="General" class="tabcontent1 ps-0 " style="display:block">
@@ -201,30 +201,46 @@
                                         <tbody class="strips">
                                             <tr class="project-overview">
                                                 <td class="viewjobft " width="20%"><b>Manufacturer:</b><br />
+                                                    <br>
+                                                    <b>Website</b>
+                                                    <br>
+
+                                                    <b>Phone</b>
+                                                    <br>
+                                                    <b>Gmail</b>
 
                                                 </td>
                                                 <td class=" viewjobft ">
                                                     Samsung
                                                     <br />
-                                                    <span>
-                                                        <i class="bi bi-globe"></i>
-                                                    </span>
-                                                    Samsung.com
+                                                    <a href="">
+                                                        <span>
+                                                            <i class="bi bi-globe"></i>
+                                                        </span>
+                                                        Samsung.com
+                                                    </a>
                                                     <br />
-                                                    <span>
-                                                        <i class="bi bi-globe"></i>
-                                                    </span>
-                                                    www.Google.com
+                                                    <a href="">
+                                                        <span>
+                                                            <i class="bi bi-globe"></i>
+                                                        </span>
+                                                        www.Google.com
+                                                    </a>
                                                     <br />
-                                                    <span>
-                                                        <i class="bi bi-telephone"></i>
-                                                    </span>
-                                                    1234567890
+                                                    <a href="">
+                                                        <span>
+                                                            <i class="bi bi-telephone"></i>
+                                                        </span>
+
+                                                        1234567890
+                                                    </a>
                                                     <br />
-                                                    <span>
-                                                        <i class="bi bi-envelope"></i>
-                                                    </span>
-                                                    abc@gmail.com
+                                                    <a href="">
+                                                        <span>
+                                                            <i class="bi bi-envelope"></i>
+                                                        </span>
+                                                        abc@gmail.com
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class=" project-overview greyback">
@@ -238,6 +254,18 @@
                                             <tr class="project-overview">
                                                 <td class="viewjobft "><b>Supplier :</b></td>
                                                 <td class="viewjobft ">Samsung</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>License to name :</b></td>
+                                                <td class="viewjobft ">Google</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>License to email :</b></td>
+                                                <td class="viewjobft ">samsung@gmail.com</td>
+                                            </tr>
+                                            <tr class="project-overview">
+                                                <td class="viewjobft "><b>Expiration date :</b></td>
+                                                <td class="viewjobft ">01/02/2022</td>
                                             </tr>
                                             <tr class="project-overview">
                                                 <td class="viewjobft "><b>Termination date :</b></td>
@@ -257,7 +285,7 @@
                                             </tr>
                                             <tr class="project-overview">
                                                 <td class="viewjobft "><b>Order Number :</b></td>
-                                                <td class="viewjobft "> 12</td>
+                                                <td class="viewjobft "> 11</td>
                                             </tr>
                                             <tr class="project-overview">
                                                 <td class="viewjobft "><b>Seats:</b></td>
@@ -282,36 +310,28 @@
                 <div id="Company Information" class="tabcontent1 ps-0" style="display:none">
                     <div class="row my-2 mx-0">
                         <div class="card-body mx-0 p-0">
-                            <div class="row ">
+                            <div class="row">
                                 <div class="col-md-12" id="first_col">
                                     <div class="demo-html mt-0">
                                         <table
-                                            class="example1 seates  display dataTable display responsive nowrap tblalign table borderless overflow-y"
+                                            class="example1 seates display dataTable display responsive nowrap tblalign table borderless overflow-y"
                                             style="width: 100%" id="example1" aria-describedby="example_info">
                                             <thead class="theadrow">
                                                 <tr>
                                                     <th><input type="checkbox" id="all_check" onchange="checkAll()">
                                                     </th>
-                                                    <th>
-                                                        Seat
-                                                    </th>
-                                                    <th>
-                                                        Check-out to
-                                                    </th>
-                                                    <th>
-                                                        Location
-                                                    </th>
-                                                    <th>
-                                                        Check-in/Check-out
-                                                    </th>
+                                                    <th>Seat</th>
+                                                    <th>Check-out to</th>
+                                                    <th>Location</th>
+                                                    <th>Check-in/Check-out</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr class="row-hover">
                                                     <td class="progtble"><input type="checkbox"
-                                                            onchange="toggleRowBackground(this)" class="single_check"
-                                                            onclick=" singleCheck()"></td>
-                                                    <td class="hrtble1 seatble1 "><a href="#" class="">
+                                                            onchange="toggleRowBackground(this)" class="single_check "
+                                                            id="checks" onclick="singleCheck()"></td>
+                                                    <td class="hrtble1 seatble1"><a href="#" class="">
                                                             <span class="">Seat 1</span></a>
                                                         <p class="header-effect mb-1">
                                                             <a data-bs-toggle="tooltip" data-bs-title="delete"
@@ -335,8 +355,8 @@
                                                 <tr class="row-hover">
                                                     <td class="progtble"><input type="checkbox"
                                                             onchange="toggleRowBackground(this)" class="single_check"
-                                                            onclick=" singleCheck()"></td>
-                                                    <td class="hrtble1 "><a href="#" class="">
+                                                            id="checks" onclick="singleCheck()"></td>
+                                                    <td class="hrtble1 seatble1"><a href="#" class="">
                                                             <span class="">Seat 2</span></a>
                                                         <p class="header-effect mb-1">
                                                             <a data-bs-toggle="tooltip" data-bs-title="delete"
@@ -348,7 +368,8 @@
                                                     </td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td><span>
+                                                    <td>
+                                                        <span>
                                                             <button1 class="clrlogbtn"
                                                                 onclick="showModalcheck('checkout.html','Check-out')">
                                                                 Check-out
@@ -364,6 +385,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!--History-->
                 <div id="Localization" class="tabcontent1 ps-0" style="display:none">
                     <div class="col-md-12 me-3" id="first_col">
@@ -371,9 +393,9 @@
                             <div class="row">
                                 <div class="col-md-12" id="first_col">
                                     <div class="seat">
-                                        <div class="">
+                                        <div id="hist">
                                             <table
-                                                class="example2 display dataTablesss display responsive nowrap tblalign table borderless"
+                                                class="example2  display dataTablesss display responsive nowrap tblalign table borderless"
                                                 style="width: 100%;" id="example2" aria-describedby="example_info">
                                                 <thead class="theadrow">
                                                     <tr class="examplesss">
@@ -447,14 +469,37 @@
                     </div>
                 </div>
                 <!--Files-->
-                <div id="Finance" class="tabcontent1 ps-0 mt-0" style="display:none;">
-                    <div class="button_su  ">
+                <div id="Finance" class="tabcontent1 rounded-2 ps-0 mt-0" style="display:none;">
+                    <div class="button_su">
                         <span class="su_button_circle"></span>
-                        <button type="button" class="impbtn-default loadbtn import" href="bulkupload.html">
+                        <button type="button" class="impbtn-default loadbtn import"
+                            onclick="showModalimport('import.html','Upload File')">
                             <span class="button_text_container">
-                                <i class="fa-solid fa-arrow-down-wide-short "></i> UPLOAD FILE
+                                <i class="fa-solid fa-arrow-down-wide-short"></i> UPLOAD FILE
                             </span>
                         </button>
+                    </div>
+                    <input type="file" id="fileInput" style="display: none;" />
+                </div>
+            </div>
+            <div class="modal fade" id="modal_md_import" role="dialog">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header hdrbg">
+                            <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"></button>
+                            <!-- <h5 class="modal-title"></h5> -->
+                            <h5 class="fnt_head">
+
+                                <b class="modal-title"></b>
+                                <div class="vertical-line">
+
+                                    <span class="Bcgtop capsule"></span>
+                                    <span class="Bcgbttm capsule"></span>
+                                </div>
+                            </h5>
+                        </div>
+                        <div class="modal-body mbdclr">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -481,6 +526,21 @@
             </div>
         </div>
     </div>
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+    </script>
     <script>
         function opentab2(evt, tabName, id) {
             var i, tabcontent1, tablinks2;
@@ -789,6 +849,22 @@
             });
         }
     </script>
+    <script>
+        function showModalimport(url, title) {
+            $('#modal_md_import').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md_import').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md_import .modal-title').html(title);
+                    $('#modal_md_import .modal-body').html(response);
+                }
+            });
+        }
+    </script>
+
     <script>
         var carousel = document.getElementById("carouselExampleIndicators1");
         carousel.addEventListener("slid.bs.carousel", function (event) {

@@ -97,7 +97,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
 }
 
 .examples td {
-    padding-top: 25px !important;
+    padding: 15px !important;
 }
 
 .fnt_head {
@@ -228,7 +228,6 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
 .back-btn {
     background-color: #e4e9ec !important;
     color: #000 !important;
-
     margin-top: 0px !important;
 }
 
@@ -502,6 +501,19 @@ input.dt-button {
         float: left !important;
         margin-bottom: 68px !important;
     }
+
+    .header-effect {
+        margin-bottom: 0px !important;
+        float: left;
+    }
+
+    .examples td {
+        padding: 25px !important;
+    }
+
+    #hist table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before {
+        top: 25px !important;
+    }
 }
 
 .seates>tbody {
@@ -522,4 +534,25 @@ input.dt-button {
         float: left !important;
         margin-bottom: 68px !important;
     }
+}
+
+/* Add your new custom class to fix mobile view issues */
+@media (max-width: 768px) {
+    .row-hover {
+        padding: 10px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+.h-20 {
+    height: 100px !important;
+    text-transform: capitalize !important;
+}
+
+#checks {
+    margin-top: -3px !important;
+}
+
+.header-effect {
+    float: right !important;
 }

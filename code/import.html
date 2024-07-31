@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="./css/style.css">
+
+<form id="formimport" action="">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="" id="form">
+                <div class="col-md-12">
+                    <div class=" excfnthr">
+                        <label for="" class="excfllbl"><span class="aster">* </span>Choose CSV File</label>
+                        <div class="input-group d-flex flex-nowrap">
+                            <input type="file" class="chooseexcfle choose" name="choose">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class=" d-flex justify-content-end space-sc sbtn">
+        <button type="button" class="taskclose1" data-bs-dismiss="modal">CLOSE</button>
+        <button type="submit" class="tasksave1" id="form">UPLOAD</button>
+    </div>
+    </div>
+</form>
+<script>
+    document.getElementById('toggleCheckbox').addEventListener('change', function () {
+        var target = document.getElementById('accor_plusExamplecollapse1');
+        if (this.checked) {
+            target.classList.add('show');
+            target.classList.remove('collapse');
+        } else {
+            target.classList.remove('show');
+            target.classList.add('collapse');
+        }
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#formimport").formValidation({
+            framework: "bootstrap",
+            fields: {
+                choose: {
+                    validators: {
+                        notEmpty: {
+                            message: "Choose File",
+                        },
+                    },
+                },
+            },
+        });
+    });
+</script>
+
+<script>
+    $(".button_su_inner").mouseenter(function (e) {
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("desplode-circle");
+        $(this).prev(".su_button_circle").addClass("explode-circle");
+
+    });
+
+    $(".button_su_inner").mouseleave(function (e) {
+
+        var parentOffset = $(this).offset();
+
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+        $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+        $(this).prev(".su_button_circle").removeClass("explode-circle");
+        $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+    });
+</script>
+
+</div>
