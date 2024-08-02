@@ -439,6 +439,10 @@ input.dt-button {
     margin-top: 9px !important;
 }
 
+.import {
+    z-index: 10 !important;
+}
+
 @media only screen and (max-width: 600px) {
     .navs {
         display: flex;
@@ -457,6 +461,7 @@ input.dt-button {
 
     .import {
         width: auto !important;
+        z-index: 10 !important;
     }
 
     .sellbtn {
@@ -553,6 +558,40 @@ input.dt-button {
     margin-top: -3px !important;
 }
 
-.header-effect {
+/* .header-effect {
     float: right !important;
+} */
+
+@media (max-width: 980px) {
+    .header-effect {
+        display: block;
+        position: absolute !important;
+        top: 33px !important;
+        left: 5px !important;
+        visibility: visible;
+    }
+}
+
+.closebtn1 {
+    padding: 0.5rem 0.9rem !important;
+    margin: 10px 0px !important;
+}
+
+.uploadbtn {
+    background-color: rgb(238, 195, 122) !important;
+    border: none !important;
+}
+
+.uploadbtn:hover {
+    background-color: rgb(232, 186, 107) !important;
+    border: none !important;
+}
+
+.brl {
+    margin-left: -45px;
+    padding: 0px 5px;
+    font-size: 18px;
+    background-color: white;
+    margin-top: 3px;
+    border-left: 1px solid rgb(199, 199, 199);
 }

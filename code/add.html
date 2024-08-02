@@ -92,8 +92,11 @@
         <div class="col-md-4">
             <div class="purchasegrp">
                 <label for="tags" class="purchaseinfo mb-1">Purchase Cost</label>
-                <input type="number" class="form-control purchaseselects" id="customer-name"
-                    placeholder="Enter Purchase Cost">
+                <div class=" d-flex align-items-center">
+                    <input type="number" class="form-control purchaseselects" id="customer-name"
+                        placeholder="Enter Purchase Cost">
+                    <span class=" brl">BRL</span>
+                </div>
             </div>
         </div>
         <div class="col-md-4">
@@ -169,12 +172,12 @@
         <div class="purchasegrp">
             <label class="purchaseinfo">Notes</label>
             <!-- <textarea type="textarea" class="form-control purchaseselects h-20" placeholder=" Enter Notes" rows> -->
-            <textarea name="Notes" class=" purchaseselects h-20 m-1" placeholder="Enter Notes" id="" cols="30"
+            <textarea name="Notes" class=" purchaseselects h-20 p-2" placeholder="Enter Notes" id="" cols="30"
                 rows="10"></textarea>
 
         </div>
     </div>
-    <div class=" d-flex justify-content-end space-sc sbtn">
+    <div class=" d-flex justify-content-end space-sc ">
         <button type="button" class="taskclose1" data-bs-dismiss="modal">CLOSE</button>
         <button type="submit" class="tasksave1" id="form">SAVE</button>
     </div>
